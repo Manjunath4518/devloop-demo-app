@@ -1,4 +1,6 @@
 def apply_discount(price, discount_percent):
+    if discount_percent is None:
+        return price
     return price - (price * discount_percent / 100)
 
 def calculate_order_total(items):
